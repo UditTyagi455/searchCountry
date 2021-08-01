@@ -14,22 +14,22 @@ const MainContent = ({data}) => {
                 <h1 ><span className="text-red-700 uppercase mr-3 text-lg">Demonym : </span>{data.demonym}</h1>
                 <h1 ><span className="text-red-700 uppercase mr-3 text-lg">Native-name : </span>{data.nativeName}</h1>
                 <h1 ><span className="text-red-700 uppercase mr-3 text-lg">Capital : </span>{data.capital}</h1>
-                <h1><span className="text-red-700 uppercase mr-3 text-lg">Population : </span>{data.population} km²</h1>
-                <h1><span className="text-red-700 uppercase mr-3 text-lg">Area : </span>{data.area}</h1>
+                <h1><span className="text-red-700 uppercase mr-3 text-lg">Population : </span>{data.population} </h1>
+                <h1><span className="text-red-700 uppercase mr-3 text-lg">Area : </span>{data.area} km²</h1>
                 <h1><span className="text-red-700 uppercase mr-3 text-lg">Languages : </span>{data.languages[0].name}, Native Language : {data.languages[0].nativeName}</h1>
                 <h1><span className="text-red-700 uppercase mr-3 my-3">Code : </span>{data.numericCode}</h1>
                 <h1><span className="text-red-700 uppercase mr-3 my-3">Regional-block : </span>{data.regionalBlocs.length !== 0?data.regionalBlocs.map((item,index)=>(
                     <span key={index}>{item.name}</span>
                 )) : <span>Nan</span>}</h1>
-                <h1><span className="text-red-700 uppercase mr-3 my-3">Sub-Region : </span>{data.subregion}</h1>
-                <h1><span className="text-red-700 uppercase">Timezone : </span>{data.timezones.map((item,index)=>(
+                <h1><span className="text-red-700 uppercase mr-3 text-lg">Sub-Region : </span>{data.subregion}</h1>
+                <h1><span className="text-red-700 uppercase mr-3 text-lg">Timezone : </span>{data.timezones.map((item,index)=>(
                     <span>{item}</span>
                 ))}</h1>
-                <h1><span className="text-red-700 uppercase">Domain : </span>{data.topLevelDomain[0]}</h1>
-                <h1><span className="text-red-700 uppercase">Borders : </span>{data.borders.map((item,index)=>(
+                <h1><span className="text-red-700 uppercase mr-3 text-lg">Domain : </span>{data.topLevelDomain[0]}</h1>
+                <h1><span className="text-red-700 uppercase mr-3 text-lg">Borders : </span>{data.borders.map((item,index)=>(
                     <span key={index}>{item} ,</span>
                 ))}</h1>
-                <h1><span className="text-red-700 uppercase">Currence : </span>{data.currencies.map((item,index) =>(
+                <h1><span className="text-red-700 uppercase mr-3 text-lg">Currence : </span>{data.currencies.map((item,index) =>(
                          <span>{item.code} , {item.name}</span>
                 ))}</h1>
                 </div>
